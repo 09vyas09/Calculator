@@ -1,45 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
-
-input[type=number] {
-    margin-right: 30px;
-    margin-left: 30px;
-    background-color: gainsboro;
-    border: black;
-    cursor: pointer;
-    border-radius: 25px;
-    padding: 15px 32px;
-    font-family: "Times New Roman", Times, serif;
+.divv {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+ 
 }
 
-.button{
-    padding: 15px 32px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 25px;
-    font-family: "Times New Roman", Times, serif;
+.text {
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
-
-h1 {
-    
-    border:black;
-    border-width:2px;
-    border-style:solid;
-    text-align: center;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-    font-style: italic;
-    font-family: "Times New Roman", Times, serif;
-    text-decoration-line: underline;
+.aa {
+    margin-bottom: 10px;
 }
-
-.result {
-    
-  padding: 5px;
-    font-size: 50px;
-    color: black;
-    font-style: italic;
-    font-family: "Times New Roman", Times, serif;
+.butt {
+    margin-left: 80px !important;
 }
-
+.res{
+    font-size: 40px;
+}

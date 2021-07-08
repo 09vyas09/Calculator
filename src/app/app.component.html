@@ -1,28 +1,27 @@
-<div style="text-align: center" class="mt-5" style="margin-right: 500px; margin-left: 500px;">
-    
-    <h1>
-      {{ title }}
-    </h1>
-    <hr>
 
-<div class="row">
-  <div class="col" style="text-align: center">
-    <br>
-    <h2>Enter numbers to calculate</h2>
-    <br>  
-    <input type="number" name="num1" [(ngModel)]="num1">
-    <input type="number" name="num2" [(ngModel)]="num2">
+<div class="divv">
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">CALCULATOR</span>
     <br><br>
-    <button (click) = "add()" class="button">ADD</button>
-    <button (click) = "sub()" class="button">SUB</button>
-    <button (click) = "mul()" class="button">MUL</button>
-    <button (click) = "div()" class="button">DIV</button>
-    <br><br>
-    <div class="result">Result : {{ num3 }}</div>
   </div>
-</div>
+</nav>
+<form>
+  <div class="form-group text">
+    <input type="number" class="form-control" placeholder="Enter First Number Here" name="num1" [(ngModel)]="num1"><br>
+    <input type="number" class="form-control" placeholder="Enter Second Number Here" name="num2" [(ngModel)]="num2">
+  </div>
+  </form>
+  <div class="row" style="text-align: center;">
+    <div class="col">
+      <button (click) = "add()" class="btn btn-primary butt" type="submit">ADD</button>
+      <button (click) = "sub()" class="btn btn-primary butt" type="submit">SUBTRACT</button>
+      <button (click) = "mul()" class="btn btn-primary butt" type="submit">MULTIPLY</button>
+      <button (click) = "div()" class="btn btn-primary butt" type="submit">DIVIDE</button>
+    </div>
+<p class="res"> <br><br><i><strong> Answer : {{ num3 }} </strong></i></p>
+  </div>
   
-    
-
 </div>
+
 <router-outlet></router-outlet>
